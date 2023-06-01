@@ -75,6 +75,8 @@ export class MinecraftTextureLoader extends AbstractLoader<MinecraftTexture> {
     }
 
     loader.load(url, handleLoad, onProgress, onError)
+
+    return texture
   }
 
   public setCrossOrigin (value: string) {

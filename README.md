@@ -9,7 +9,7 @@ import { MinecraftModelLoader, MinecraftTextureLoader } from 'three-mcmodel'
 
 new MinecraftModelLoader().load('model.json', mesh => {
   const textureLoader = new MinecraftTextureLoader()
-  mesh.resolveTextures(path => textureLoader.load(`${path}.png`))
+  mesh.resolveTextures(path => ({ texture: textureLoader.load(`${path}.png`)/*, mcmeta: { animation: {...} }*/ }))
   scene.add(mesh)
 })
 ```

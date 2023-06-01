@@ -13,5 +13,5 @@ export {
   MinecraftModel, isMinecraftModel
 } from './model'
 export {
-  MinecraftTextureLoader, MinecraftTexture, CHECKERBOARD_IMAGE
+  MinecraftTextureLoader, MinecraftTexture, MISSING_TEXTURE
 } from './texture'

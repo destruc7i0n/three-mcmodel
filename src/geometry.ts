@@ -163,8 +163,8 @@ export class MinecraftModelGeometry extends BufferGeometry {
     super()
     const { vertices, uvs, indices, groups } = MinecraftModelGeometry.computeAttributes(model)
 
-    this.addAttribute('position', new Float32BufferAttribute(vertices, 3))
-    this.addAttribute('uv', new Float32BufferAttribute(uvs, 2))
+    this.setAttribute('position', new Float32BufferAttribute(vertices, 3))
+    this.setAttribute('uv', new Float32BufferAttribute(uvs, 2))
     this.setIndex(new Uint16BufferAttribute(indices, 1))
 
     for (const { start, count, materialIndex } of groups) {

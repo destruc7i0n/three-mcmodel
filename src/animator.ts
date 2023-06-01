@@ -1,7 +1,7 @@
 import { Clock, Texture } from "three"
 import { MinecraftTexture } from "./texture"
 
-type Frame = { index: number, time: number }
+export type Frame = { index: number, time: number }
 type FrameSequence = Frame[]
 
 export type AnimationMeta = {

@@ -9,7 +9,7 @@ import { AnimationMeta, McMetaAnimator } from './animator'
 
 type MaterialMapping = { [path: string]: MinecraftModelMaterial }
 
-type ResolvedTexture = { texture: MinecraftTexture, mcmeta?: AnimationMeta }
+export type ResolvedTexture = { texture: MinecraftTexture, mcmeta?: AnimationMeta }
 
 export class MinecraftModelMesh extends Mesh {
   public model: MinecraftModel

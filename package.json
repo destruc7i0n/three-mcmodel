@@ -1,6 +1,6 @@
 {
   "name": "@destruc7i0n/three-mcmodel",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A library for working with Minecraft json models using three.js.",
   "author": "destruc7i0n <destruc7i0n@users.noreply.github.com>",
   "license": "MIT",
@@ -33,11 +33,10 @@
   "devDependencies": {
     "@types/three": "^0.152.1",
     "rimraf": "^3.0.0",
-    "three": "^0.152.2",
     "typescript": "^5.0.4"
   },
   "peerDependencies": {
-    "three": ">=0.152.2"
+    "three": ">=0.152"
   },
   "files": [
     "lib/**/*",
